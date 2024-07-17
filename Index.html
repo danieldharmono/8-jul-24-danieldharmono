@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- memasukkan stylesheet css eksternal --> 
+    <link rel="stylesheet" href="Style.css">
+   
+</head>
+<body>  
+
+<!-- mmain container --> 
+        <div class="box">      
+    <div class="container">
+<h1>BMI Calculator </h1>
+<form id="bmi-form">
+<div class="gender">
+    
+        <!-- Radio button untuk laki-laki -->
+        <input type="radio" id="selection-man" name="gender" value="male" checked>
+        <label for="selection-man">Male</label>
+        
+
+        <!-- Radio button untuk perempuan -->
+        <input type="radio" id="selection-woman" name="gender" value="female">
+        <label for="selection-woman">Female</label>
+    </div>
+
+<!-- input untuk umur --> 
+<div> 
+<p>Age </p>  
+<input type="text" id="Age">     
+</div>
+
+<!-- input untuk tinggi dan berat --> 
+<div>
+<p> Height (cm)</p>
+<input type="text" id="Height"> 
+ <p>Weight (kg)</p>
+ <input type="text" id="Weight">
+ </div>
+
+ <!-- tombol untuk menghitung dan mereset --> 
+<div class="button-group">  <!-- class button group --> 
+ <button type= "button" id="calculate">Calculate </button>
+ <button type= "reset" id="reset">Reset </button>
+ </div>
+ </form>
+
+ <!-- container untuk menghasilkan perhitungan BMI --> 
+ <div class="result-container" id="result-container"> 
+                <div class="result"> <!-- class result --> 
+                    <p>Your BMI is</p>
+                <div id="result">00.00</div>
+            <p class="comment">You are <span id="comment">Overweight</span></p>
+        </div>
+</div>
+</div>
+</div>
+
+<div class="side-info">  <!-- side information --> 
+    <h2>Deskripsi BMI</h2>
+    <p>BMI (Body Mass Index) adalah ukuran yang digunakan untuk mengetahui apakah berat badan anda berada dalam kisaran yang sehat.
+    Berikut ini adalan kategori-kategori perhitungan skor berat badan, untuk mengukur tingkat kisaran berat badan anda:</p>
+<ul>
+<li> underweight: BMI &lt; 18.5</li>
+<li> normal: BMI 18.5 - 25</li>
+<li> overweight: BMI 25 - 30 </li>
+<li> obese: BMI  ≥30 </li>
+<p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pmebacaan BMI ini) dan tidak ada tndakan yang harus diambil berdasarkan
+    nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter. Kalkulator ini akan memberikan anda gambaran tentang perbandingan berat badan anda dengan nilai umum.
+    Indeks Masa Tubuh dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter).
+</p>
+</ul>
+<p>Maintaining a healthy BMI is important for overall health and well-being. It can reduce the risk of developing various health conditions.</p>
+            
+            <div class ="download-link">Download our app on the Play Store </div> <!-- class download link --> 
+            <div class="app-link">  <!-- class app link -->     
+            <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank">
+                <img src="play.jpg" alt="Play Store" width="185" height="74">
+            </a>
+    
+            <a href="https://www.halodoc.com/bmi-calculator/" target="_blank">
+                <img src="helod.png" alt="Halo Doc" width="150" height="60">
+            </a>
+</div>
+</div>
+</div>
+
+<!-- memasukkan script javascript eksternal --> 
+<script src="Script.js"></script> 
+
+</body>
+</html>
